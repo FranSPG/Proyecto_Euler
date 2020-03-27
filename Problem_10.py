@@ -13,12 +13,13 @@ sys.setrecursionlimit(5000000)
 
 
 def sum_prime(n):
-    if (n == 0): return 0
+    if (n == 0):
+        return 0
     if(ft.is_probably_prime(n)):
         return (sum_prime(n-1) + n)
     return sum_prime(n-1)
 
-
+    
 # In[ ]:
 
 

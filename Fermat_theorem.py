@@ -17,7 +17,8 @@ def is_probably_prime(n, k = 3):
     
     for i in range(0, k):
         a = randint(1, n-1)
-        if (pow(a, n-1, n) != 1):
+        if (pow(a, n-1, n) != 1): # 1: Base, 2: Exponent, 3: Modulus
+            # pow(4, 3, 5) = (4 * 4 * 4) % 5
             return False 
     return True
 
